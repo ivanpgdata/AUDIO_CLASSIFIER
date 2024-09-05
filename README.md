@@ -4,7 +4,6 @@ This project has a sound classifier using both CNN and Dense layers trained with
 
 After exploring our data and let's say "having fun with it" (see picture below), we have created 2 ML models
 
-graph_audio_sample
 ![](images/graph_audio_sample.jpg)
 
 
@@ -12,7 +11,7 @@ The model with ``Dense layers`` gives us with around 55% of accuracy while the o
 
 The instruments that the dataset has are the following ones: 
 
-irmas_parameters
+![](images/irmas_parameters.jpg)
 
 * Cello (cel) 🎻
 * Clarinet (cla) 🎶
@@ -29,30 +28,33 @@ irmas_parameters
 ## Dense Layers model:
 This is the structure of the model using dense layers:
 
-Dense_model
+![](images/Dense_model.jpg)
 
 As we can see we have an acceptable accuracy rate:
 
-Dense_model_accuracy
-
+![](images/Dense_model_accuracy.jpg)
 So one example of use of this model would be:
 
-Dense_model_example
+![](images/Dense_model_example.jpg)
 
 ## Convolutional Layers model:
 After properly prepare the data that we will use and how we are going to use it, we proceed to create from scratch one model with the following structure:
 
-CNN_model0
 
-CNN_model1
+![](images/CNN_model0.jpg)
+
+
+![](images/CNN_model1.jpg)
 
 As we can see we have overfitting so we are going to add a dropout layer to the model and see what happens
 
-CNN_model2
+
+![](images/CNN_model2.jpg)
 
 The quality of the results is not good so we are going to try using L2 regulatization by adding it to the model and see the result
 
-CNN_model3
+
+![](images/CNN_model3.jpg)
 
 We still have overfitting so we cannot say that this model has a good performance.
 After seeing these results and as we cannot spend an eternity of time only with this project, we can determine that the model with CNN tends to overfit, learning by heart (which is paradoxical to say that from a ML model) the training.

@@ -5,6 +5,8 @@ This project has a sound classifier using both CNN and Dense layers trained with
 After exploring our data and let's say "having fun with it" (see picture below), we have created 2 ML models
 
 graph_audio_sample
+![](images/graph_audio_sample.jpg)
+
 
 The model with ``Dense layers`` gives us with around 55% of accuracy while the one that uses `` Convolutional layers `` falls into overfitting.
 
